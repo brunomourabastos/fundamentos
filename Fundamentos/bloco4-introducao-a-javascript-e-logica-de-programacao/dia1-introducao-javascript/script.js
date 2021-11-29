@@ -34,10 +34,29 @@
 //     console.log("Maior número é:", maior_c);
 // }
 
-const numeroPositivo = -2;
+// const numeroPositivo = -2;
 
-if (numeroPositivo > 0) {
-    console.log("Positive");
+// if (numeroPositivo > 0) {
+//     console.log("Positive");
+// } else {
+//     console.log("Negative");
+// }
+
+const angulo_a = 90;
+const angulo_b = -45;
+const angulo_c = 45;
+
+let soma_angulos = angulo_a + angulo_b + angulo_c;
+
+if (soma_angulos === 180) {
+    triangulo = true;
 } else {
-    console.log("Negative");
+    triangulo = false;
+}
+switch (triangulo) {
+    case true:
+        console.log("Angulos representam um triângulo");
+        break;
+    case false:
+        console.log("Angulos não representam um triângulo");
 }
