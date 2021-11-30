@@ -81,28 +81,44 @@
 // }
 
 //Programa que informa movimento das peças de xadrez:
-let pecaXadrez = 'cavalo';
-let xadrezPadrao = pecaXadrez.toLowerCase();
+// let pecaXadrez = 'cavalo';
+// let xadrezPadrao = pecaXadrez.toLowerCase();
 
-switch (xadrezPadrao) {
-    case 'peao':
-        console.log("Anda uma casa e come na diagonal");
-        break;
-    case 'torre':
-        console.log("Anda somente nas retas");
-        break;
-    case 'cavalo':
-        console.log("Movimentação em L");
-        break;
-    case 'bispo':
-        console.log("Movimentação somente na diagonal");
-        break;
-    case 'rainha':
-        console.log("Movimento livre");
-        break;
-    case 'rei':
-        console.log("Anda somente 1 casa para qualquer direção");
-        break;
-    default:
-        console.log("Peça desconhecida");
+// switch (xadrezPadrao) {
+//     case 'peao':
+//         console.log("Anda uma casa e come na diagonal");
+//         break;
+//     case 'torre':
+//         console.log("Anda somente nas retas");
+//         break;
+//     case 'cavalo':
+//         console.log("Movimentação em L");
+//         break;
+//     case 'bispo':
+//         console.log("Movimentação somente na diagonal");
+//         break;
+//     case 'rainha':
+//         console.log("Movimento livre");
+//         break;
+//     case 'rei':
+//         console.log("Anda somente 1 casa para qualquer direção");
+//         break;
+//     default:
+//         console.log("Peça desconhecida");
+// }
+
+let notaFinal = 49;
+
+if (notaFinal >= 90) {
+    console.log("A");
+} else if (notaFinal >= 80 && notaFinal < 90) {
+    console.log("B");
+} else if (notaFinal >= 70 && notaFinal < 80) {
+    console.log("C");
+} else if (notaFinal >= 60 && notaFinal < 70) {
+    console.log("D");
+} else if (notaFinal >= 50 && notaFinal < 60) {
+    console.log("E");
+} else {
+    console.log("F");
 }
