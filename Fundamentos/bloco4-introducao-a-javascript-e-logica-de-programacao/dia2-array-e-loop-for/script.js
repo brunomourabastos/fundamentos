@@ -1,6 +1,7 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let sumNumbers = 0;
 let biggestNumber = 0;
+let oddsNumber = 0;
 
 //Exericio 1:
 // for (numberIndex = 0; numberIndex < numbers.length; numberIndex += 1) {
@@ -33,9 +34,21 @@ let biggestNumber = 0;
 // }
 
 //Exercicio 5:
+// for (numbersIndex = 0; numbersIndex < numbers.length; numbersIndex += 1) {
+//     if (numbers[numbersIndex] > biggestNumber) {
+//         biggestNumber = numbers[numbersIndex];
+//     }
+// }
+// console.log(biggestNumber);
+
+//Exercicio 6:
 for (numbersIndex = 0; numbersIndex < numbers.length; numbersIndex += 1) {
-    if (numbers[numbersIndex] > biggestNumber) {
-        biggestNumber = numbers[numbersIndex];
+    if (numbers[numbersIndex] % 2 == 1) {
+        oddsNumber += 1;
     }
 }
-console.log(biggestNumber);
+if (oddsNumber > 0) {
+    console.log("A quantidade de números ímpares é: ", oddsNumber);
+} else {
+    console.log("Nenhum valor ímpar encontrado.");
+}
