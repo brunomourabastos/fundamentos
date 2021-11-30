@@ -5,7 +5,14 @@ let sumNumbers = 0;
 //     console.log(numbers[numberIndex]);
 // }
 
-for (number of numbers) {
-    sumNumbers += number;
+// for (number of numbers) {
+//     sumNumbers += number;
+// }
+// console.log(sumNumbers);
+
+for (numbersIndex = 0; numbersIndex < numbers.length; numbersIndex += 1) {
+    sumNumbers += numbers[numbersIndex];
+
 }
-console.log(sumNumbers);
+let mediaNumbers = sumNumbers / numbers.length;
+console.log("Sua média foi de: ", mediaNumbers);
