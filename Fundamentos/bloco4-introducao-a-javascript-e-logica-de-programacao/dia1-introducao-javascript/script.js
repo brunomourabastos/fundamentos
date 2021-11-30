@@ -107,18 +107,27 @@
 //         console.log("Peça desconhecida");
 // }
 
-let notaFinal = 49;
+// let notaFinal = 49;
 
-if (notaFinal >= 90) {
-    console.log("A");
-} else if (notaFinal >= 80 && notaFinal < 90) {
-    console.log("B");
-} else if (notaFinal >= 70 && notaFinal < 80) {
-    console.log("C");
-} else if (notaFinal >= 60 && notaFinal < 70) {
-    console.log("D");
-} else if (notaFinal >= 50 && notaFinal < 60) {
-    console.log("E");
+// if (notaFinal >= 90) {
+//     console.log("A");
+// } else if (notaFinal >= 80 && notaFinal < 90) {
+//     console.log("B");
+// } else if (notaFinal >= 70 && notaFinal < 80) {
+//     console.log("C");
+// } else if (notaFinal >= 60 && notaFinal < 70) {
+//     console.log("D");
+// } else if (notaFinal >= 50 && notaFinal < 60) {
+//     console.log("E");
+// } else {
+//     console.log("F");
+// }
+
+const num_1 = 1;
+const num_2 = 2;
+const num_3 = 2;
+if ((num_1 % 2 === 0 && num_2 % 2 === 0) || (num_1 % 2 === 0 && num_3 % 2 === 0) || (num_2 % 2 === 0 && num_3 % 2 === 0)) {
+    console.log('true');
 } else {
-    console.log("F");
+    console.log('false');
 }
