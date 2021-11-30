@@ -132,11 +132,24 @@
 //     console.log('false');
 // }
 
-const num_1 = 1;
-const num_2 = 1;
-const num_3 = 2;
-if ((num_1 % 2 === 1 && num_2 % 2 === 1) || (num_1 % 2 === 1 && num_3 % 2 === 1) || (num_2 % 2 === 1 && num_3 % 2 === 1)) {
-    console.log('true');
+// const num_1 = 1;
+// const num_2 = 1;
+// const num_3 = 2;
+// if ((num_1 % 2 === 1 && num_2 % 2 === 1) || (num_1 % 2 === 1 && num_3 % 2 === 1) || (num_2 % 2 === 1 && num_3 % 2 === 1)) {
+//     console.log('true');
+// } else {
+//     console.log('false');
+// }
+
+const valorVenda = -1;
+const custoProduto = 15;
+const impostoSobreCusto = custoProduto * 0.2;
+let valorCustoTotal = custoProduto + impostoSobreCusto;
+
+
+let lucroPorMil = (valorVenda - valorCustoTotal) * 1000;
+if (valorVenda < 0 || custoProduto < 0) {
+    console.log("Erro, alguma entrada menor que zero.");
 } else {
-    console.log('false');
+    console.log("Seu luctro foi de: R$", lucroPorMil);
 }
