@@ -123,10 +123,19 @@
 //     console.log("F");
 // }
 
+// const num_1 = 1;
+// const num_2 = 2;
+// const num_3 = 2;
+// if ((num_1 % 2 === 0 && num_2 % 2 === 0) || (num_1 % 2 === 0 && num_3 % 2 === 0) || (num_2 % 2 === 0 && num_3 % 2 === 0)) {
+//     console.log('true');
+// } else {
+//     console.log('false');
+// }
+
 const num_1 = 1;
-const num_2 = 2;
+const num_2 = 1;
 const num_3 = 2;
-if ((num_1 % 2 === 0 && num_2 % 2 === 0) || (num_1 % 2 === 0 && num_3 % 2 === 0) || (num_2 % 2 === 0 && num_3 % 2 === 0)) {
+if ((num_1 % 2 === 1 && num_2 % 2 === 1) || (num_1 % 2 === 1 && num_3 % 2 === 1) || (num_2 % 2 === 1 && num_3 % 2 === 1)) {
     console.log('true');
 } else {
     console.log('false');
