@@ -53,12 +53,19 @@
             quadradoPrincipal.style.background = "rgb(76,164,109)";
         }
         greenSquare()
-        
+
         function redSquare(){
             let quadradoMeio = document.getElementsByClassName("center-content")[0];
             quadradoMeio.style.background = "white";
             }
         redSquare();
+
+        function textCorrection(){
+            let correcao = document.getElementsByTagName("h1")[0];
+            correcao.textContent = "Exercício 5.1 - JavaScript";
+        }
+        textCorrection();
+
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
