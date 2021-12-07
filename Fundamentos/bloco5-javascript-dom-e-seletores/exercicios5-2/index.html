@@ -59,6 +59,7 @@
     <script>
         let corpo = document.getElementsByTagName("body")[0];
         let titulo = document.createElement("h1");
+        titulo.className = 'title';
         titulo.innerHTML = "Exercicio 5.2 - JavaScript Dom";
         corpo.appendChild(titulo)
         let conteudoPrincipal = document.createElement("main");
@@ -97,9 +98,20 @@
             let elementList = document.createElement('li');
             elementList.innerHTML = numero;
             listaNaoOrdenada.appendChild(elementList);
-
         }
         
+        let tituloUm = document.createElement('h3');
+        tituloUm.innerHTML = 'titulo1';
+        let tituloDois = document.createElement('h3');
+        tituloDois.innerHTML = 'titulo2';
+        let tituloTres = document.createElement('h3');
+        tituloTres.innerHTML = 'titulo3'; 
+
+        conteudoPrincipal.appendChild(tituloUm);
+        conteudoPrincipal.appendChild(tituloDois);
+        conteudoPrincipal.appendChild(tituloTres);
+
+
 
 
 
