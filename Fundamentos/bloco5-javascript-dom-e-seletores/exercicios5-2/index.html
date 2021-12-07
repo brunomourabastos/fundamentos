@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        let corpo = document.getElementsByTagName("body")[0];
+        let titulo = document.createElement("h1");
+        titulo.innerHTML = "Exercicio 5.2 - JavaScript Dom";
+        corpo.appendChild(titulo)
+        let conteudoPrincipal = document.createElement("main");
+        conteudoPrincipal.className = 'main-content';
+        conteudoPrincipal.innerHTML = "Meu conteudo principal.";
+        corpo.appendChild(conteudoPrincipal);
+        
+        let conteudoCentral = document.createElement('section');
+        conteudoCentral.className = 'center-content';
+        conteudoPrincipal.appendChild(conteudoCentral);
+
+        let textoCentral = document.createElement('p');
+        textoCentral.innerHTML = "Colocar algum texto";
+        conteudoCentral.appendChild(textoCentral);
+
+        let textoEsquerdo = document.createElement('section');
+        textoEsquerdo.className = 'left-content';
+        textoEsquerdo.innerHTML = "class name com texto esquerdo";
+        conteudoPrincipal.appendChild(textoEsquerdo);
+
+        let textoDireito = document.createElement('section');
+        textoDireito.className = 'right-content';
+        textoDireito.innerHTML = 'classe name com texto direito';
+        conteudoPrincipal.appendChild(textoDireito);
+
+        let imagemSmall = document.createElement('img');
+        imagemSmall.src = "https://picsum.photos/200";
+        imagemSmall.className = 'small-image';
+        textoEsquerdo.appendChild(imagemSmall);
+
+        let listaNaoOrdenada = document.createElement('ul');
+        textoDireito.appendChild(listaNaoOrdenada);
+        let numeral = ['um','dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (numero of numeral){
+            
+            let elementList = document.createElement('li');
+            elementList.innerHTML = numero;
+            listaNaoOrdenada.appendChild(elementList);
+
+        }
+        
+
+
+
+
+
+        
+        
+      // COLOQUE SEU CÓDIGO AQUI
+    </script>
+  </body>
+</html>
