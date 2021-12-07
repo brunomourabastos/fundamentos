@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="novoParagrafo" id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="novoParagrafo"  id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      const titulo = document.getElementById("page-title");
+      titulo.innerText = "21 gramas"
+      const segundoParagrafo = document.getElementById("second-paragraph");
+      segundoParagrafo.innerText = "21 gramas se trata de um filme de drama e os 21 gramas são referentes ao peso da alma pois exist um experimento feito em que a diferença de peso entre a mesma pessoa viva e após o falecimento é de 21 gramas.  ";
+      segundoParagrafo.style.backgroundColor = "blue";
+      const subTitulo = document.getElementById("subtitle");
+      subTitulo.innerText = "Sobre 21 gramas:"
+      let classePragrafo = document.getElementsByClassName("novoParagrafo");
+      classePragrafo[0].innerText = "Esse paragrafo agora está com a cor vermelha";
+      let subTituloTag = document.getElementsByTagName("h4");
+      subTituloTag[0].style.color = "orange";
+    </script>
+  </body>
+</html>
