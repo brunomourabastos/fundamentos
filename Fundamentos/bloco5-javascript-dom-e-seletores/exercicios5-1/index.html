@@ -43,8 +43,8 @@
     </main>
     <script>
         function textChange (){
-            let texto = document.getElementsByClassName("center-content");
-            texto[0].textContent = "Me vejo trabalhando como um programador dedicado, mudando de vida, aproveitando as oportunidades para cada vez mais aprender e sempre evoluindo."
+            let texto = document.getElementsByTagName("p")[1];
+            texto.innerHTML = "Me vejo trabalhando como um programador dedicado, mudando de vida, aproveitando as oportunidades para cada vez mais aprender e sempre evoluindo."
         }
         textChange();
 
@@ -66,6 +66,20 @@
         }
         textCorrection();
 
+        function upperCases(){
+            let paragraph = document.getElementsByTagName('p')[0];
+            paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+        }
+        upperCases();
+
+        function content(){
+            let conteudo = document.getElementsByTagName('p');
+            for (index = 0; index<conteudo.length; index +=1){
+                console.log(conteudo[index].innerHTML);
+            }
+        }
+        content();
+
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
@@ -74,7 +88,7 @@
         - document.getElementsByTagName()
 
 
- Crie uma função que corrija o texto da tag <h1>.
+Exercício 5.1 - 
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
