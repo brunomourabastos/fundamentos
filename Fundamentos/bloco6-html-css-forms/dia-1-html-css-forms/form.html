@@ -10,13 +10,78 @@
     <header>
         <h1>Currículo</h1>
     </header>
-    <main>
-        <fieldset>
-            <label for="texto-inicial">Texto</label>
-            <textarea required name="text-1" id="texto-inicial" cols="30" rows="10" maxlength="50"></textarea>
-        </fieldset>
-    </main>
-
-    
+    <form action="" method="GET">
+        <main>
+            <div>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="person-name">Nome Completo</label>
+                    <input maxlength="50" type="text" name="full-name" id="person-name" required>
+                    <label for="person-email">Email</label>
+                    <input maxlength="50" type="email" name="email" id="person-email" required>
+                    <label for="person-cpf">CPF</label>
+                    <input maxlength="11" type="text" name="cpf" id="person-cpf" required>
+                    <label for="person-adress">Endereço</label>
+                    <input maxlength="200" type="text" name="adress" id="person-adress" required>
+                    <label for="person-city">Cidade</label>
+                    <input maxlength="28" type="text" name="city" id="person-city" required>
+                    <label for="person-state">Estado</label>
+                    <select required name="state" id="person-state">
+                        <option value="">Selecione o estado...</option>
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="ro">Rondônia</option>
+                    <option value="rr">Roraima</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="se">Sergipe</option>
+                    <option value="to">Tocantins</option>
+                    </select>
+                    <br>
+                    <label for="local-type">Tipo</label>
+                    <br>
+                
+                    <input type="radio" name="local-type" id="house" value="casa">
+                    <label for="house">Casa</label>
+                    <input type="radio" name="local-type" id="apartment" value="apartamento">
+                    <label for="apartment">Apartamento</label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Informações Último Emprego</legend>
+                    <label for="curriculum-resume">Resumo do Currículo</label>
+                    <textarea required maxlength="1000" name="curriculum-text" id="curriculum-resume" cols="30" rows="10"></textarea>
+                    <label for="occupation">Cargo</label>
+                    <input required maxlength="40" type="text" name="person-occupation" id="occupation">
+                    <label for="occupation-description">Descrição do Cargo</label>
+                    <input required maxlength="500" type="text" name="job-description" id="occupation-description">
+                    <label for="initial-date">Data de Início</label>
+                    <input type="date" name="in-date" id="initial-date">
+                </fieldset>
+            </div>
+        </main>        
+        <button>Enviar Currículo</button>
+    </form>
 </body>
 </html>
+
