@@ -4,6 +4,7 @@ let biggestNumber = numbers[0];
 let oddsNumber = 0;
 
 
+
 //Exericio 1:
 // for (let numberIndex = 0; numberIndex < numbers.length; numberIndex += 1) {
 //     console.log(numbers[numberIndex]);
@@ -55,10 +56,10 @@ let oddsNumber = 0;
 // }
 
 //Exercicio 7:
-let lowestNumber = numbers[0];
-for (number of numbers) {
-    if (number < lowestNumber) {
-        lowestNumber = number;
-    }
-}
-console.log(lowestNumber);
+// let lowestNumber = numbers[0];
+// for (number of numbers) {
+//     if (number < lowestNumber) {
+//         lowestNumber = number;
+//     }
+// }
+// console.log(lowestNumber);
